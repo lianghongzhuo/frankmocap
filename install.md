@@ -7,7 +7,7 @@ micromamba create -y -n frank python=3.11
 micromamba activate frank
 
 micromamba install pytorch3d pytorch fvcore matplotlib omegaconf cloudpickle pandas tqdm scipy \
-ipython cuda-nvcc ninja libcusparse-dev opencv pycocotools gdown scikit-learn pyopengl
+ipython cuda-nvcc ninja libcusparse-dev opencv pycocotools gdown scikit-learn pyopengl easydict
 
 micromamba install nvidia/label/cuda-12.0.0::cuda-toolkit
 

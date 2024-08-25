@@ -25,7 +25,7 @@ from detectron2.engine import DefaultPredictor
 # from detectron2.data.datasets import register_coco_instances
 
 # Type-aware hand (hand-object) hand detector
-hand_object_detector_path = './detectors/hand_object_detector'
+hand_object_detector_path = './detectors/hand_object_detector/lib'
 sys.path.append(hand_object_detector_path)
 from model.utils.config import cfg as cfgg
 
