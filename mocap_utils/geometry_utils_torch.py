@@ -3,7 +3,6 @@
 import torch
 import torch.nn as nn
 import numpy as np
-import torchgeometry as tgm
 
 __all__ = [
     # flip 3d hand

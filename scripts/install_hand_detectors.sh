@@ -5,8 +5,6 @@
 mkdir -p detectors
 cd detectors
 
-pip install gdown
-
 # Install 100-DOH hand-object detectors
 git clone git@github.com:ddshan/hand_object_detector.git
 if [ ! -d hand_object_detector ]; then
@@ -14,7 +12,7 @@ if [ ! -d hand_object_detector ]; then
 fi
 # compile
 cd hand_object_detector/lib
-python setup.py build develop
+pip install --no-deps -e .
 cd ../../
 
 # Install 100-DOH hand-only detectors
